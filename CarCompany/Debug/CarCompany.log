@@ -1,0 +1,20 @@
+﻿  CarCompany.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(172): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+  d:\documents\visual studio 2015\projects\carcompany\carcompany\carcompany.cpp(33): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<const _Kty,_Ty>::pair<PossibleOption,int,void,0>(_Other1 &&,_Other2 &&) noexcept' en cours de compilation
+          with
+          [
+              _Kty=PossibleOption,
+              _Ty=float,
+              _Other1=PossibleOption,
+              _Other2=int
+          ]
+  d:\documents\visual studio 2015\projects\carcompany\carcompany\carcompany.cpp(26): note: voir la référence à l'instanciation de la fonction modèle 'std::pair<const _Kty,_Ty>::pair<PossibleOption,int,void,0>(_Other1 &&,_Other2 &&) noexcept' en cours de compilation
+          with
+          [
+              _Kty=PossibleOption,
+              _Ty=float,
+              _Other1=PossibleOption,
+              _Other2=int
+          ]
+  CarCompany.vcxproj -> d:\Documents\Visual Studio 2015\Projects\CarCompany\Debug\CarCompany.exe
+  CarCompany.vcxproj -> d:\Documents\Visual Studio 2015\Projects\CarCompany\Debug\CarCompany.pdb (Full PDB)
