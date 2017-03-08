@@ -1,10 +1,5 @@
 #include "stdafx.h"
 
-ostream& operator<<(ostream &flux, CompanyManagement const& duree) {
-	duree.afficher(flux);
-	return flux;
-}
-
 int main()
 {
 
@@ -66,7 +61,7 @@ int main()
 	myVehiculeCompany.getMotoAvailable()[0]->toString(mapVehiculeBrand);
 	
 	cout << myVehiculeCompany << " et " << myVehiculeCompany2 << endl;
-
+	cout << myVehiculeCompany.getNbrOfCompany() << endl;
 
     return 0;
 }

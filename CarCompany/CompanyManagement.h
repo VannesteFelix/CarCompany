@@ -6,6 +6,10 @@ private:
 	string name;
 	vector<Car*> carAvailable;
 	vector<Motorcycle*> motoAvailable;
+	static int nbrOfCompany;
+
+	void afficher(ostream &flux) const;
+
 
 public:
 
@@ -14,8 +18,10 @@ public:
 
 	vector<Car*> getCarAvailable();
 	vector<Motorcycle*> getMotoAvailable();
+	int getNbrOfCompany();
 
-	void afficher(ostream &flux) const;
+	//	operator overload
+	friend std::ostream& operator<<(ostream &flux, CompanyManagement const& duree);
 
 	~CompanyManagement();
 };
