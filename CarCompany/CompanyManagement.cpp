@@ -6,7 +6,8 @@ CompanyManagement::CompanyManagement()
 {
 }
 
-CompanyManagement::CompanyManagement(vector<Car*>  carAvailable, vector<Motorcycle*> motoAvailable) {
+CompanyManagement::CompanyManagement(string name, vector<Car*>  carAvailable, vector<Motorcycle*> motoAvailable) {
+	this->name = name;
 	this->carAvailable = carAvailable;
 	this->motoAvailable = motoAvailable;
 }
@@ -21,4 +22,10 @@ vector<Motorcycle*> CompanyManagement::getMotoAvailable()
 }
 
 CompanyManagement::~CompanyManagement(){
+}
+
+void CompanyManagement::afficher(ostream &flux) const {
+
+	flux << name ;
+
 }

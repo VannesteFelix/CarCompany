@@ -1,5 +1,10 @@
 #include "stdafx.h"
 
+ostream& operator<<(ostream &flux, CompanyManagement const& duree) {
+	duree.afficher(flux);
+	return flux;
+}
+
 int main()
 {
 
@@ -52,14 +57,16 @@ int main()
 	carAvailable.push_back(&car);
 	motoAvailable.push_back(&moto);
 
-	CompanyManagement myVehiculeCompany(carAvailable,motoAvailable);
+	CompanyManagement myVehiculeCompany("first try",carAvailable,motoAvailable);
+	CompanyManagement myVehiculeCompany2("second try", carAvailable, motoAvailable);
 
 	//	TO-STRING
 
 	myVehiculeCompany.getCarAvailable()[0]->toString(mapVehiculeBrand, mapCarType);
 	myVehiculeCompany.getMotoAvailable()[0]->toString(mapVehiculeBrand);
 	
+	cout << myVehiculeCompany << " et " << myVehiculeCompany2 << endl;
+
 
     return 0;
 }
-
